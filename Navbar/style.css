@@ -58,7 +58,7 @@ nav ul li a {
     flex-direction: column;
     text-align: center;
     background: rgb(21, 21, 151);
-    gap:0;
+    gap: 0;
     overflow: hidden;
   }
 
@@ -66,12 +66,78 @@ nav ul li a {
     padding: 20px;
   }
 
-  .menu-icon{
+  .menu-icon {
     display: block;
   }
 
-  .menulist{
+  .menulist {
     transition: all 0.5s;
   }
+}
 
+.hero {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+
+  min-height: 90vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 2rem;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero-text p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.hero-text button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  transition: 0.3s;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.hero-text button:hover{
+  background-color: rgb(40,40,40);
+}
+
+.hero-image {
+  flex: 1;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 500px;
+
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    min-height: auto;
+    gap: 1.5rem;
+    padding: 40px 0;
+  }
+
+  .hero-text h1 {
+    font-size: 2.2rem;
+  }
 }
